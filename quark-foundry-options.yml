@@ -1,0 +1,15 @@
+template: app-gh
+branches:
+  - name: ci
+    options:
+      - package
+      - publish-docker-image
+      - upload-artifacts-dev
+  - name: main
+    options:
+      - quark-phoenix-docker-image-deploy
+name: tms-test-repo
+parameters:
+  project-dir: ''
+type: github-actions
+settings-profile: default
